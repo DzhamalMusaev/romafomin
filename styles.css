@@ -1,0 +1,96 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+/* Карточка */
+.card {
+    background: linear-gradient(145deg, #1e3851, #0c1a29);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Верхнее изображение */
+.overlay-image img {
+    position: absolute;
+    top: -9px; /* Смещение сверху */
+    left: 17%;
+    transform: translateX(-50%);
+    width: 150px; /* Размер изображения */
+    z-index: 10;
+    pointer-events: none; /* Изображение неактивно для кликов */
+}
+
+/* Фотография */
+.photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #00b4d8;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Имя и описание */
+.card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #90e0ef;
+    font-style: italic;
+}
+.description {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    color: #a9d6e5;
+    line-height: 1.5;
+}
+
+/* Ссылки */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.link-item {
+    text-decoration: none;
+    background: linear-gradient(135deg, #00b4d8, #90e0ef);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.link-item:hover {
+    background: linear-gradient(135deg, #90e0ef, #00b4d8);
+    transform: translateY(-3px);
+}
+.link-item i {
+    font-size: 1.2rem;
+}
